@@ -10,6 +10,13 @@ export default class Bathroom extends React.Component{
   }
 
   render(){
+
+    componentDidUpdate(prevProps){
+      this.setState({
+        switchStatus: Boolean(!this.props.statusSimple)
+      });
+    }
+
     return(
       <Grid
         container

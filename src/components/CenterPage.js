@@ -32,7 +32,7 @@ class CenterPage extends Component{
   }
 
   getBathrooms(tmp){
-    Axios.get("http://localhost:3001/CC/" + tmp).then(response =>  {
+    Axios.get("https://ccbcb.herokuapp.com/CC/" + tmp).then(response =>  {
                 // console.log("RESS " + response.data)
                 if(Array.isArray(response.data)){
                   this.setState({bathroomJSON: response.data,
@@ -44,7 +44,7 @@ class CenterPage extends Component{
   }
 
   postStatus(bathroom_num, dorm, codeHash){
-    Axios.post("http://localhost:3001/CC/" + dorm + "/" + bathroom_num).then(response => {
+    Axios.post("https://ccbcb.herokuapp.com/CC/" + dorm + "/" + bathroom_num).then(response => {
                     console.log("POST Status res: " + response)
                   });
   }
