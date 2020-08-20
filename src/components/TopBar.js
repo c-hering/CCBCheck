@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
-import { AppBar, Typography, Toolbar, TextField, Grid } from '@material-ui/core';
+import { AppBar, Typography, Toolbar } from '@material-ui/core';
 
 class TopBar extends Component{
-  constructor(props){
-    super(props);
-  }
 
   render(){
     return(

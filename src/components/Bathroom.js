@@ -10,9 +10,11 @@ export default class Bathroom extends React.Component{
   }
 
   componentDidUpdate(prevProps){
-    this.setState({
-      switchStatus: Boolean(!this.props.statusSimple)
-    });
+    if(prevProps.statusSimple !== this.props.statusSimple){
+      this.setState({
+        switchStatus: Boolean(!this.props.statusSimple)
+      });
+    }
   }
 
   render(){

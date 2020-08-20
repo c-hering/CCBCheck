@@ -1,5 +1,5 @@
 import React from 'react';
-import { Paper, Grid } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 import Bathroom from './Bathroom';
 
 

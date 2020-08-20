@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Tabs, Tab, Paper } from '@material-ui/core';
+import { Tabs, Tab, Paper, Link, Grid } from '@material-ui/core';
 import BathroomDisplay from './BathroomDisplay';
 import Axios from 'axios';
 
@@ -98,8 +98,20 @@ class CenterPage extends Component{
             <Tab label="South" />
           </Tabs>
         </Paper>
-        {content}
+        <Grid
+          container
+          direction="column"
+          justify="center"
+          alignItems="center"
+          >
+          <Grid>
+            <Link href="https://www.coloradocollege.edu/offices/housing-and-conferences/on-campus-housing/traditional-halls/loomis.html">
+              If you need to find out what bathroom number correllates to your area, use the floor plans.
+            </Link>
+          </Grid>
 
+          {content}
+        </Grid>
       </div>
     );
   }
